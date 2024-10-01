@@ -33,7 +33,7 @@ fun TodoInput(
             value = todoState.value,
             modifier = Modifier
                 .height(50.dp)
-                .width(220.dp),
+                .weight(1f),
             onValueChange = { text: String ->
                 todoState.value = text
             },
@@ -75,8 +75,7 @@ fun TodoInput(
                 todosState.value = filtered
             },
             border = BorderStroke(1.dp, Color.Red),
-            modifier = Modifier
-                ,
+            modifier = Modifier,
             shape = RoundedCornerShape(8.dp)
         ) {
             Text(
